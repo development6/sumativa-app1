@@ -7,6 +7,10 @@ import { HeaderComponent } from './compartida/header/header.component';
 import { FooterComponent } from './compartida/footer/footer.component';
 import { AsideComponent } from './compartida/aside/aside.component';
 import { LoginComponent } from './general/login/login.component';
+import { RegistroComponent } from './general/registro/registro.component';
+import { ProductoComponent } from './general/producto/producto.component';
+import { HomeComponent } from './general/home/home.component';
+import { NotFoundComponent } from './general/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { LoginComponent } from './general/login/login.component';
     HeaderComponent,
     FooterComponent,
     AsideComponent,
-    LoginComponent
+    LoginComponent,
+    RegistroComponent,
+    ProductoComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
