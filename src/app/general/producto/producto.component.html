@@ -1,25 +1,46 @@
-<div class="container-fluid">
+<div class="container">
+    <div class="row justify-content-md-center">
 
+        <div *ngFor="let item of productosService.productos" class="col-4">
+            <div class="form-control" class="thumbnail">
+                <img src="{{item.img}}" alt="" width="40%">
+                <p>Nombre: {{item.nombre}}</p>
+                <p>Descripcion: {{item.descripcion}}</p>
+                <p>Precio: {{item.precio}}</p>
+                <p>Cantidad: {{item.cantidad}}</p>
+                <!--<a href="not-found">Mas informacion</a>-->
+                <form (ngSubmit)="restar(item.id)">
+                    <!--<input [(ngModel)]="productosService.productos" name="item" type="item">-->
+                    <button type="submit" class="btn btn-primary">Comprar</button>
+                </form>
 
-    <!-----------------Productos y caracteristicas--------------------------->
-    <h2>Productos</h2>
-    <div class="image">
-        <img src="assets/img/super.jpg" alt="" width="10%">
-        <p>El mejor juego de carreras hasta la fecha</p>
-        <p>$59.99</p>
-        <a href="notFound" target="">Mas informacion</a>
+            </div>
+        </div>
 
     </div>
 
-    <br>
+</div>
 
-    <div class="image">
-        <img src="assets/img/mario.jpg" alt="" width="10%">
-        <p>Disfruta uno de nuestros mejores productos</p>
-        <p>$60</p>
-        <a href="notFound" target="">Mas informacion</a>
+<div class="container">
+    <div class="card-block">
+        <h3>Lista compra</h3>
+        <table class="table table-hover">
+            <thead class="thead-default">
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item2 of productosService.lista">
+                    <td>{{item2.nombre}}</td>
+                    <td>{{item2.descripcion}}</td>
+                    <td>{{item2.precio}}</td>
+                    <td><button (click)="eliminar(item2.id)" type="submit" class="btn btn-primary">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
-
-    <br>
 </div>

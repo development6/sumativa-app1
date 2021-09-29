@@ -1,26 +1,31 @@
-<div class="container">
-    <div class="row justify-content-md-center">
-        <div class="col-4">
-            <div class="form-control">
-                <h3>Login</h3>
-                <div class="mb-3">
-                    <label fom="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" placeholder="Ingrese email">
+<section class="float-none">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-4">
+                <div class="form-control">
+                    <form (ngSubmit)="insertar()" class="form">
+                        <h3>Login</h3>
+                        <div class="mb-3">
+                            <label form="email" class="form-label">Email</label>
+                            <input [(ngModel)]="email" name="email" type="text" class="form-control" placeholder="Ingrese Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="form-group" class="form-label">Password</label>
+                            <input [(ngModel)]="password" name="password" type="password" class="form-control" placeholder="Ingrese Password">
+                        </div>
+                        <div class="mb-3">
+                            <!--<a href="producto" class="btn btn-primary" id="">Iniciar sesion</a><br>-->
+                            <button type="submit " name="ingresar " class="btn btn-primary" value="Ingresar ">Ingresar</button>
+                            <p>No tienes una cuenta? <a href="registro">Registrate</a>.</p>
+                        </div>
+                        <h5>{{mensaje}}</h5>
+                    </form>
 
                 </div>
-
-
-                <div class="mb-3">
-                    <label fom="contrasena" class="form-label">Contrasena</label>
-                    <input type="password" class="form-control" id="contrasena" placeholder="Ingrese contrasena">
-
-                </div>
-
-                <a href="producto" class="btn btn-primary" id="">Iniciar sesion</a>
-                <a href="registro">Registrar</a>
 
             </div>
+
         </div>
 
     </div>
-</div>
+</section>

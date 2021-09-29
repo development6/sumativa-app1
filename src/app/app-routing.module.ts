@@ -8,10 +8,11 @@ import { NotFoundComponent } from './general/not-found/not-found.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent}, //ruta por default
+  {path: 'home', component: HomeComponent},
   {path: 'producto', component:ProductoComponent}, 
   {path: 'registro', component:RegistroComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'notFound', component:NotFoundComponent}
+  {path: 'not-found', component:NotFoundComponent}
 
 ];
 
