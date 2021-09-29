@@ -16,7 +16,6 @@ export class ProductosService {
   constructor(private http: HttpClient){
     console.log("Productos Service");
     this.cargarProductos();
-    //this.prueba(index: number|undefined);
   }
 
 
@@ -36,21 +35,4 @@ export class ProductosService {
   }
 
   
-
-
-  /*private prueba(index: number|undefined){
-    
-    console.log("prueba");
-    this.productos.forEach(elements =>{
-      if(elements.id == Number(index)) {
-        console.log(elements.cantidad=Number(elements.cantidad)-1)
-      }
-    });
-
-  }*/
-
-
-
-
-
 }
