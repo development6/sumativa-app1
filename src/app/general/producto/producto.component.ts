@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductosService } from 'src/app/services/productos.service';
 import { HttpClient } from '@angular/common/http';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-producto',
@@ -9,6 +10,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductoComponent implements OnInit {
   httpClient: any;
+
+  Titulo: string= 'Eliminar';
+  Detalle:string='El producto se ha eliminado';
+  Accion:string='Guardar';
+
+  
+
+  mensaje:string='';
 
   constructor(public productosService: ProductosService) { }
 
@@ -35,7 +44,7 @@ export class ProductoComponent implements OnInit {
   }
 
 
-  eliminar(id:number|undefined){
+  /*eliminar(id:number|undefined){
     
     for(let i=0; i<this.productosService.productos.length;i++){
       
@@ -47,7 +56,13 @@ export class ProductoComponent implements OnInit {
       }
     }
       
-  } 
+  } */
+
+  capturarVariable(mensaje: any):void{
+    console.log("capturarVariable...", mensaje);
+
+  }
+
 
 }   
 

@@ -5,6 +5,7 @@ import {RegistroComponent} from './general/registro/registro.component';
 import {LoginComponent} from './general/login/login.component';
 import {HomeComponent} from './general/home/home.component';
 import { NotFoundComponent } from './general/not-found/not-found.component';
+import {FormularioComponent} from './general/formulario/formulario.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent}, //ruta por default
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'producto', component:ProductoComponent}, 
   {path: 'registro', component:RegistroComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'not-found', component:NotFoundComponent}
+  {path: 'not-found', component:NotFoundComponent},
+  {path: 'formulario', component:FormularioComponent}
 
 ];
 

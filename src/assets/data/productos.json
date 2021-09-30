@@ -3,7 +3,7 @@
             "id": 1,
             "nombre": "Mario Kart 8 Deluxe",
             "descripcion": "El mejor juego de carreras en la franquicia",
-            "precio": "$60.00",
+            "precio": 60.0,
             "img": "assets/img/mario.jpg",
             "cantidad": 10
         },
@@ -11,7 +11,7 @@
             "id": 2,
             "nombre": "Luigi's Mansion 3",
             "descripcion": "Una aventura de miedo",
-            "precio": "$60.00",
+            "precio": 60.0,
             "img": "assets/img/luigi.jpg",
             "cantidad": 10
         },
@@ -19,7 +19,7 @@
             "id": 3,
             "nombre": "Super Mario Odyssey",
             "descripcion": "Una nueva aventura nos aguarda",
-            "precio": "$60.00",
+            "precio": 60.0,
             "img": "assets/img/odyssey.jpg",
             "cantidad": 10
         },
@@ -27,7 +27,7 @@
             "id": 4,
             "nombre": "New Super Mario U Deluxe",
             "descripcion": "Mario y sus amigos se dirigen a una nueva aventura",
-            "precio": "$60.00",
+            "precio": 60.0,
             "img": "assets/img/super.jpg",
             "cantidad": 10
         }

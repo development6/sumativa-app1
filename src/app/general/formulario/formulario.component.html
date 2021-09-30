@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="form-control">
+                <form (ngSubmit)="insertarEnvio()" class="form">
+                    <h3>Complete formulario</h3>
+                    <hr>
+                    <h6>Formulario Direccion de envio</h6>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Pais: </label>
+                        <input [(ngModel)]="pais" name="pais" type="text" class="form-control" placeholder="Ingrese Pais">
+                        <p style="color: red">{{mensaje_pais}}</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Calle:</label>
+                        <input [(ngModel)]="calle" name="calle" type="text" class="form-control" placeholder="Ingrese Calle">
+                        <p style="color: red">{{mensaje_calle}}</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Ciudad: </label>
+                        <input [(ngModel)]="ciudad" name="ciudad" type="text" class="form-control" placeholder="Ciudad">
+                        <p style="color: red">{{mensaje_ciudad}}</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Region: </label>
+                        <input [(ngModel)]="region" name="passwordConfirm" type="text" class="form-control" placeholder="Region">
+                        <p style="color: red">{{mensaje_region}}</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Codigo postal: </label>
+                        <input [(ngModel)]="codigo" name="codigo" type="text" class="form-control" placeholder="Codigo postal">
+                        <p style="color: red">{{mensaje_codigo}}</p>
+                    </div>
+                    <hr>
+
+
+                    <!--2da parte formulario-->
+                    <h6>Formulario de pago</h6>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Tipo de tarjeta : </label>
+                        <input [(ngModel)]="tipoTarjeta" name="tipoTarjeta" type="text" class="form-control" placeholder="Tipo de tarjeta">
+                        <p style="color: red">{{mensaje_tipoTarjeta}}</p>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Nombre: </label>
+                        <input [(ngModel)]="nombreCliente" name="nombreCliente" type="text" class="form-control" placeholder="Ingrese nombre de cliente">
+                        <p style="color: red">{{mensaje_nombreCliente}}</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Numero de tarjeta: </label>
+                        <input [(ngModel)]="numTarjeta" name="numTarjeta" type="text" class="form-control" placeholder="Numero de tarjeta">
+                        <p style="color: red">{{mensaje_numTarjeta}}</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Codigo de seguridad: </label>
+                        <input [(ngModel)]="codigoSeg" name="codigoSeg" type="text" class="form-control" placeholder="Codigo de seguridad">
+                        <p style="color: red">{{mensaje_codigoSeg}}</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Mes de expiracion: </label>
+                        <input [(ngModel)]="mesExp" name="mesExp" type="text" class="form-control" placeholder="Mes de expiracion">
+                        <p style="color: red">{{mensaje_mesExp}}</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-group" class="form-label">Año de expiracion: </label>
+                        <input [(ngModel)]="annoExp" name="annoExp" type="text" class="form-control" placeholder="Año de expiracion">
+                        <p style="color: red">{{mensaje_annoExp}}</p>
+                    </div>
+
+
+
+
+
+                    <div class="mb-3">
+                        <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted">El formulario es valido? {{valido}}</h6>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
